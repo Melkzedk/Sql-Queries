@@ -27,7 +27,15 @@ INSERT INTO Customers (CustomerID, FirstName, LastName, City) VALUES
 
 INSERT INTO Orders (OrderID, CustomerID, ProductName, Amount) VALUES
 (101, 1, 'Laptop', 75000),
-
+(102, 2, 'Phone', 30000),
+(103, 3, 'Tablet', 25000),
+(104, 1, 'Mouse', 1500),
+(105, 4, 'Keyboard', 3500),
+(106, 5, 'Monitor', 20000),
+(107, 6, 'Printer', 18000),  
+(108, 7, 'Desk', 12000),
+(109, 8, 'Chair', 8000),
+(110, 2, 'Headphones', 5000);
 
 Select * from Customers;
 Select * from Order;
