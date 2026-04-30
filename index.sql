@@ -27,7 +27,7 @@ INSERT INTO Customers (CustomerID, FirstName, LastName, City) VALUES
 (10, 'Lilian', 'Njeri', 'Machakos');
 
 
-SELECT c.FirstName, c.LastName, c.City, o.ProductName, o.Amount FROM Customers c INNER JOIN  Orders o ON c.CustomerID = c.CustomerID;
+SELECT c.FirstName , c.LastName, c.City, o.ProductName, o.Amount FROM Customers c INNER JOIN Orders o ON c.CustomerID = c.CustomerID;
 
 INSERT INTO Orders (OrderID, CustomerID, ProductName, Amount) VALUES
 (101, 1, 'Laptop', 75000),
@@ -51,16 +51,29 @@ SHOW TABLES;
 SELECT * FROM INFORMATION_SCHEMA.TABLES
 WHERE TABLE_TYPE = 'BASE TABLE';
 
+SELECT c.FirstName, c.LastName, c.City, o.ProductName, o.Amount FROM Customers c LEFT JOIN Orders o ON c.CustomerID = c.CustomerID;
+
+SELECT c.FirstName, c.LastName, c.City, o.ProductName, o.Amount FROM Customers c Right JOIN Orders o ON c.CustomerID = c.CustomerID;
+
+CREATE VIEW CustomerOrders AS
 SELECT 
-    c.CustomerID,
     c.FirstName,
     c.LastName,
+    c.City,
     o.ProductName,
     o.Amount
 FROM Customers c
-LEFT JOIN Orders o
+INNER JOIN Orders o
     ON c.CustomerID = o.CustomerID;
 
-SELECT c.FirstName, c.LastName, c.City, o.ProductName, o.Amount FROM Customers c Right JOIN Orders o ON c.CustomerID = o.CustomerID;
+	SELECT * FROM CustomerOrders;
+
+
+	CREATE VIEW NairobiCustomers AS
+SELECT FirstName, LastName
+FROM Customers
+WHERE City = 'Nairobi';
+
+SELECT * FROM NairobiCustomers;
 
 
