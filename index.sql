@@ -61,3 +61,6 @@ FROM Customers c
 LEFT JOIN Orders o
     ON c.CustomerID = o.CustomerID;
 
+SELECT c.FirstName, c.LastName, c.City, o.ProductName, o.Amount FROM Customers c Right JOIN Orders o ON c.CustomerID = o.CustomerID;
+
+
