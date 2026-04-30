@@ -1,4 +1,4 @@
-
+/* SQL Queries for Customers and Orders Database */
 CREATE TABLE Customers (
     CustomerID INT PRIMARY KEY,
     FirstName VARCHAR(50),
