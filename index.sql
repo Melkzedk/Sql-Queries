@@ -1,4 +1,6 @@
 /* SQL Queries for Customers and Orders Database */
+
+/* This SQL script creates two tables: Customers and Orders. It then populates these tables with sample data and demonstrates various SQL operations, including SELECT statements, JOINs, and the creation of views. The script also includes comments explaining the purpose of views in SQL. */
 CREATE TABLE Customers (
     CustomerID INT PRIMARY KEY,
     FirstName VARCHAR(50),
