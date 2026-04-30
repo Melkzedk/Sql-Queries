@@ -69,6 +69,9 @@ INNER JOIN Orders o
 	SELECT * FROM CustomerOrders;
 
 
+/** Views are virtual tables that are based on the result set of a SELECT statement. They do not store data themselves but provide a way to simplify complex queries and present data in a specific format. Views can be used to encapsulate complex logic, improve security by restricting access to certain columns, and enhance readability by providing a more intuitive interface for querying data.
+*/
+
 	CREATE VIEW NairobiCustomers AS
 SELECT FirstName, LastName
 FROM Customers
