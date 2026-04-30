@@ -74,7 +74,7 @@ SELECT FirstName, LastName
 FROM Customers
 WHERE City = 'Nairobi';
 
-SELECT * FROM NairobiCustomers;
+SELECT * FROM Orders;
 
 
 CREATE VIEW HighValueOrders AS
@@ -88,3 +88,8 @@ WHERE Amount >= 10000;
 
 SELECT * FROM HighValueOrders;
 
+CREATE VIEW PremiumCustomerOrders AS
+SELECT c.FirstName, c.LastName, c.City, o.ProductName, o.Amount FROM Customers c INNER JOIN Orders o ON c.CustomerID = c.CustomerID
+WHERE o.Amount >= 10000;
+
+SELECT * FROM PremiumCustomerOrders;
