@@ -1,3 +1,4 @@
+
 CREATE TABLE Customers (
     CustomerID INT PRIMARY KEY,
     FirstName VARCHAR(50),
@@ -25,6 +26,9 @@ INSERT INTO Customers (CustomerID, FirstName, LastName, City) VALUES
 (9, 'Brian', 'Kiptoo', 'Kericho'),
 (10, 'Lilian', 'Njeri', 'Machakos');
 
+
+SELECT c.FirstName, c.LastName, c.City, o.ProductName, o.Amount FROM Customers c INNER JOIN  Orders o ON c.CustomerID = c.CustomerID;
+
 INSERT INTO Orders (OrderID, CustomerID, ProductName, Amount) VALUES
 (101, 1, 'Laptop', 75000),
 (102, 2, 'Phone', 30000),
@@ -39,9 +43,11 @@ INSERT INTO Orders (OrderID, CustomerID, ProductName, Amount) VALUES
 
 
 Select * from Customers;
-Select * from Order;
+
+Select * from Orders;
 
 SHOW TABLES;
 
 SELECT * FROM INFORMATION_SCHEMA.TABLES
-WHERE TABLE_TYPE = 'BASE TABLE'; 
+WHERE TABLE_TYPE = 'BASE TABLE';
+
