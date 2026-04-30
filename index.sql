@@ -77,3 +77,14 @@ WHERE City = 'Nairobi';
 SELECT * FROM NairobiCustomers;
 
 
+CREATE VIEW HighValueOrders AS
+SELECT 
+    OrderID,
+    CustomerID,
+    ProductName,
+    Amount
+FROM Orders
+WHERE Amount >= 10000;
+
+SELECT * FROM HighValueOrders;
+
