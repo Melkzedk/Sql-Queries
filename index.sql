@@ -99,3 +99,8 @@ SELECT c.FirstName, c.LastName, c.City, o.ProductName, o.Amount FROM Customers c
 WHERE o.Amount >= 10000;
 
 SELECT * FROM PremiumCustomerOrders;
+
+CREATE TABLE OrderTable(
+orderId int PRIMARY KEY,
+ProductName varchar (200) NOT NULL,
+orderDate date NOT NULL);
