@@ -56,6 +56,7 @@ SELECT c.FirstName, c.LastName, c.City, o.ProductName, o.Amount FROM Customers c
 
 SELECT c.FirstName, c.LastName, c.City, o.ProductName, o.Amount FROM Customers c Right JOIN Orders o ON c.CustomerID = c.CustomerID;
 
+/* The above queries demonstrate the use of INNER JOIN, LEFT JOIN, and RIGHT JOIN to combine data from the Customers and Orders tables based on the CustomerID. The INNER JOIN returns only matching records, while the LEFT JOIN returns all records from the Customers table and matching records from the Orders table, and the RIGHT JOIN returns all records from the Orders table and matching records from the Customers table. */
 CREATE VIEW CustomerOrders AS
 SELECT 
     c.FirstName,
