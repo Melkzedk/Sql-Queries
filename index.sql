@@ -118,6 +118,8 @@ VALUES
 (9, 'Webcam', '2026-05-09'),
 (10, 'External Hard Drive', '2026-05-10');
 
+/* The above code creates a new table called OrderTable with three columns: orderId, ProductName, and orderDate. It then inserts 10 records into the OrderTable with different product names and order dates. The orderDate column is of type date, which allows us to perform date-related queries on the data. */
+
 SELECT * FROM OrderTable WHERE orderDate='2026-05-09';
 
 SELECT * FROM OrderTable WHERE orderDate BETWEEN '2026-05-01' AND '2026-05-06';
