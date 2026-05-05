@@ -117,3 +117,5 @@ VALUES
 (8, 'Printer', '2026-05-08'),
 (9, 'Webcam', '2026-05-09'),
 (10, 'External Hard Drive', '2026-05-10');
+
+SELECT * FROM OrderTable WHERE orderDate='2026-05-09';
