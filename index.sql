@@ -119,3 +119,7 @@ VALUES
 (10, 'External Hard Drive', '2026-05-10');
 
 SELECT * FROM OrderTable WHERE orderDate='2026-05-09';
+
+SELECT * FROM OrderTable WHERE orderDate BETWEEN '2026-05-01' AND '2026-05-06';
+
+SELECT * FROM CustomerOrders WHERE Amount BETWEEN 20000 AND 100000;
