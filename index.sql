@@ -40,7 +40,10 @@ INSERT INTO Orders (OrderID, CustomerID, ProductName, Amount) VALUES
 (107, 6, 'Printer', 18000),  
 (108, 7, 'Desk', 12000),
 (109, 8, 'Chair', 8000),
+(108, 7, 'Desk', 12000),
+(109, 8, 'Chair', 8000),
 (110, 2, 'Headphones', 5000);
+
 
 
 Select * from Customers;
