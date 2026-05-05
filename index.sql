@@ -14,6 +14,10 @@ CREATE TABLE Orders (
     Amount DECIMAL(10,2),
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 );
+/*Command to create a new database named testDb and then drop it immediately after. This is often done to demonstrate database creation and deletion operations in SQL. The CREATE DATABASE statement initializes a new database, while the DROP DATABASE statement removes it from the server, including all its data and structures.*/
+
+CREATE DATABASE testDb;
+DROP DATABASE testDb;
 
 INSERT INTO Customers (CustomerID, FirstName, LastName, City) VALUES
 (1, 'Melk', 'Wafula', 'Nairobi'),
