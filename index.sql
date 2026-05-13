@@ -109,18 +109,6 @@ orderId int PRIMARY KEY,
 ProductName varchar (200) NOT NULL,
 orderDate date NOT NULL);
 
-INSERT INTO OrderTable (orderId, ProductName, orderDate)
-VALUES
-(1, 'Laptop', '2026-05-01'),
-(2, 'Wireless Mouse', '2026-05-02'),
-(3, 'Keyboard', '2026-05-03'),
-(4, 'Monitor', '2026-05-04'),
-(5, 'USB Flash Drive', '2026-05-05'),
-(6, 'Office Chair', '2026-05-06'),
-(7, 'Desk Lamp', '2026-05-07'),
-(8, 'Printer', '2026-05-08'),
-(9, 'Webcam', '2026-05-09'),
-(10, 'External Hard Drive', '2026-05-10');
 
 /* The above code creates a new table called OrderTable with three columns: orderId, ProductName, and orderDate. It then inserts 10 records into the OrderTable with different product names and order dates. The orderDate column is of type date, which allows us to perform date-related queries on the data. */
 
