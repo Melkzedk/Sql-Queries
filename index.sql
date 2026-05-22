@@ -138,7 +138,11 @@ SELECT @@VERSION;
 
 /*Schemas */
 
+CREATE DATABASE CompanyDB;
 
+CREATE SCHEMA HR;
+
+CREATE SCHEMA Sales;
 
 CREATE TABLE HR.Employees (
     EmployeeID INT PRIMARY KEY,
