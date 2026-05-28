@@ -138,3 +138,15 @@ SELECT @@VERSION;
 
 /*Schemas */
 
+CREATE DATABASE CompanyDB;
+
+CREATE SCHEMA HR;
+
+CREATE SCHEMA Sales;
+
+CREATE TABLE HR.Employees (
+    EmployeeID INT PRIMARY KEY,
+    FullName VARCHAR(100),
+    Department VARCHAR(50),
+    Salary DECIMAL(10,2)
+);
