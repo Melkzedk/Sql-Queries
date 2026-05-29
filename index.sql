@@ -7,7 +7,13 @@ CREATE TABLE Customers (
     City VARCHAR(50)
 );
 
-
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    ProductName VARCHAR(100),
+    Amount DECIMAL(10,2),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
 /*Command to create a new database named testDb and then drop it immediately after. This is often done to demonstrate database creation and deletion operations in SQL. The CREATE DATABASE statement initializes a new database, while the DROP DATABASE statement removes it from the server, including all its data and structures.*/
 
 CREATE DATABASE testDb;
