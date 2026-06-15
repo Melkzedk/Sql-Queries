@@ -150,8 +150,3 @@ CREATE TABLE HR.Employees (
     Department VARCHAR(50),
     Salary DECIMAL(10,2)
 );
-
-
-testDb
-testDb
-testDb
