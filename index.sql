@@ -151,7 +151,3 @@ CREATE TABLE HR.Employees (
     Salary DECIMAL(10,2)
 );
 
-
-test
-test
-test
