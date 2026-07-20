@@ -104,6 +104,9 @@ WHERE o.Amount >= 10000;
 
 SELECT * FROM PremiumCustomerOrders;
 
+testDb testDb
+
+
 CREATE TABLE OrderTable(
 orderId int PRIMARY KEY,
 ProductName varchar (200) NOT NULL,
