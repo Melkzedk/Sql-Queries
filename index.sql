@@ -148,5 +148,6 @@ CREATE TABLE HR.Employees (
     EmployeeID INT PRIMARY KEY,
     FullName VARCHAR(100),
     Department VARCHAR(50),
-    Salary DECIMAL(10,2)
+    Salary DECIMAL(10,2),
+    Age INT (20)
 );
