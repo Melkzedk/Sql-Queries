@@ -149,5 +149,6 @@ CREATE TABLE HR.Employees (
     FullName VARCHAR(100),
     Department VARCHAR(50),
     Salary DECIMAL(10,2),
-    Age INT (20)
+    Age INT (20),
+    S.name Varchar(200)
 );
