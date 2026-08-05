@@ -1,1 +1,1 @@
-SQL QUERIES
+SQL QUERIES - Tutorials
