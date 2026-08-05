@@ -152,3 +152,5 @@ CREATE TABLE HR.Employees (
     Age INT (20),
     S.name Varchar(200)
 );
+
+Testdb
