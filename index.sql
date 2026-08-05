@@ -146,6 +146,8 @@ CREATE SCHEMA IT;
  
 CREATE SCHEMA Sales;
 
+CREATE SCHEMA Healthcare;
+
 CREATE TABLE HR.Employees (
     EmployeeID INT PRIMARY KEY,
     FullName VARCHAR(100),
