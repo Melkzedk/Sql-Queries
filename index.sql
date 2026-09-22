@@ -160,3 +160,5 @@ CREATE TABLE HR.Employees (
     Age INT (20),
 );
 
+select  * from Employees order by Salary desc limit 3 offset 2;
+select CONCAT(Name, Position) AS Name From Employees;
