@@ -160,5 +160,3 @@ CREATE TABLE HR.Employees (
     Age INT (20),
 );
 
-
-test
