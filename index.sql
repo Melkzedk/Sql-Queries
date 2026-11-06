@@ -162,5 +162,3 @@ CREATE TABLE HR.Employees (
 
 select  * from Employees order by Salary desc limit 3 offset 2;
 select CONCAT(Name, Position) AS Name From Employees;
-
-test
